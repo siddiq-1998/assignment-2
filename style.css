@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +7,7 @@
 
 body {
     font-family: 'Poppins',
-    sans-serif;
+        sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -17,7 +18,8 @@ a {
     font-size: 20px;
 }
 
-/*---------------------------Common CSS----------------------------*/
+/*--------------------------
+--------Common CSS----------*/
 .btn {
     background-color: #E02C6D;
     border: none;
@@ -27,34 +29,40 @@ a {
     border-radius: 15px;
     opacity: 1;
 }
-.btn a{
-    font-size: 16px ;
+
+.btn a {
+    font-size: 16px;
     color: #FFF;
 }
-.btn i{
+
+.btn i {
     padding-left: 5px;
 }
-.btn:hover{
+
+.btn:hover {
     opacity: .9;
 }
 
 
 
-/*-----------------------------Header Section ---------------------------*/
+/*-----------------------------
+-------Header Section ---------*/
 
 #home {
     padding: 4% 10%;
     color: #000;
 }
+
 .hamburger {
     display: none;
 }
 
 .menu-wrap {
-display: flex;
-justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
-.logo{
+
+.logo {
     font-size: 24px;
     font-weight: bolder;
 }
@@ -66,13 +74,14 @@ nav ul {
 }
 
 
-nav ul li a{
+nav ul li a {
     font-size: 16px;
     padding: 10px;
 }
-nav ul li a:hover{
+
+nav ul li a:hover {
     color: #FFF;
-    background-color:#E02C6D ;    
+    background-color: #E02C6D;
     border-radius: 15px;
 }
 
@@ -100,11 +109,11 @@ nav button {
     color: #3A3A3A;
 }
 
-.hero-text{
+.hero-text {
     padding: 20px 0;
 }
 
-.hero-img{
+.hero-img {
     margin: auto;
     align-self: center;
     width: 350px;
@@ -117,29 +126,33 @@ nav button {
 }
 
 
-.hero-area-img img{
+.hero-area-img img {
     width: 90%;
-} 
-.img-bg{
+}
+
+.img-bg {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 240px;
     height: 240px;
-     background-color: #F7F0FF;
-     border-radius: 50%;
-     z-index: -10;
+    background-color: #F7F0FF;
+    border-radius: 50%;
+    z-index: -10;
 }
+
 .feature-right img {
     width: 100%;
-} 
+}
 
 
-/*-------------------- Partners--------------------- */
+/*----------------------
+ -----Partners--------- */
 .partners-section {
     padding: 4% 10%;
 }
+
 .partners {
     display: flex;
     justify-content: space-between;
@@ -148,20 +161,22 @@ nav button {
 }
 
 
-/*-------------------------------card section ----------------------------*/
-#cards{
+/*--------------------------------
+------------card section --------*/
+#cards {
     padding: 5% 7%;
     position: relative;
 }
 
-.p-collection{
+.p-collection {
     color: #3A3A3A;
     text-align: center;
     font-size: 24px;
     font-weight: 500;
     padding: 20px 0;
 }
-.cards{
+
+.cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: auto;
@@ -176,13 +191,17 @@ nav button {
     transition: all .2s ease-in-out;
 }
 
-    .card:hover {
-        transform: scale(1.1);
-    }
+.card:hover {
+    transform: scale(1.1);
+}
 
 .card-img img {
     width: 100%;
     border-radius: 5px;
+}
+
+.cart {
+    display: none;
 }
 
 
@@ -196,7 +215,7 @@ nav button {
     margin-bottom: 4%;
 }
 
-.rating{
+.rating {
     display: flex;
     align-items: center;
 }
@@ -204,26 +223,30 @@ nav button {
 .rating i {
     color: orange;
 }
-.rating-point{
-    padding-left: 10px; 
+
+.rating-point {
+    padding-left: 10px;
 }
 
-.see-more{
+.see-more {
     padding-top: 10px;
     position: absolute;
     right: 7%;
 }
-.see-more a{
+
+.see-more a {
     display: flex;
     align-items: center;
-    color:#E02C6D;
+    color: #E02C6D;
     font-size: 14px;
 }
-.see-more i{
-padding-left: 5px;
+
+.see-more i {
+    padding-left: 5px;
 }
 
-/*-------------------------------------feature Section-----------------------------*/
+/*----------------------------------
+------------feature Section----------*/
 #feature {
     display: flex;
     align-items: center;
@@ -247,11 +270,12 @@ padding-left: 5px;
     padding-right: 8%;
 }
 
-.line{
+.line {
     border: 1px solid rgba(196, 196, 196, 0.651);
 }
 
-/*------------------------------------Footer Section-------------------------------*/
+/*-----------------------------
+-------Footer Section--------*/
 #footer {
     text-align: center;
     padding: 6% 38%;
@@ -276,7 +300,8 @@ padding-left: 5px;
 
 
 
-/* ------------------------------meadia quiry----------------------------- */
+/* -------------------------
+-----meadia quiry---------- */
 
 @media (max-width: 768px) {
 
@@ -285,24 +310,25 @@ padding-left: 5px;
         margin-top: 10px;
     }
 
-    .logo{
+    .logo {
         font-size: 20px;
     }
 
-    nav{
+    nav {
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
+
     .hamburger {
         display: block;
         width: 20px;
         height: 20px;
     }
 
-   
 
-    .home{
+
+    .home {
         flex-direction: column;
         margin-top: 10%;
     }
@@ -310,7 +336,7 @@ padding-left: 5px;
     .hero-area-title,
     .hero-area-img,
     .feature-left,
-    .feature-right{
+    .feature-right {
         width: 100%;
         padding-bottom: 50px;
         text-align: center;
@@ -327,12 +353,17 @@ padding-left: 5px;
         flex-wrap: wrap;
         justify-content: center;
     }
-    .partner{
+
+    .partner {
         padding: 10px;
     }
 
+    .cart {
+        display: none;
+    }
 
-    .cards{
+
+    .cards {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -346,7 +377,7 @@ padding-left: 5px;
         font-size: medium;
     }
 
-    #feature{
+    #feature {
         flex-direction: column;
     }
 
@@ -360,20 +391,24 @@ padding-left: 5px;
         padding-right: 8%;
     }
 
-    #footer{
+    #footer {
         padding: 10% 18%;
     }
-    
+
 
 
 }
 
 @media (max-width: 478px) {
-    .cards{
+    .cards {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .menu{
+    .cart {
+        display: block;
+    }
+
+    .menu {
         display: none;
     }
 
